@@ -1,14 +1,14 @@
 # Learning-Curve
 Repositório onde vou postar as mudanças em um código zero o melhor comentado possível, o objetivo é criar um pseudo "Celeste".
 
--Comandos:
+Comandos:
   -Movimento Horizontal
   -Pular
   -Dash
   -Agarrar a parede
     -Movimento vertical
     
- -Jogo:
+Jogo:
   -Gravidade
   -Chão
   -Plataformas
