@@ -2,7 +2,7 @@
 <html lang="en"> 
 <head> 
     <meta charset="UTF-8" />
-    <title>Making your first Phaser 3 Game - Part 1</title>
+    <title>Starting Point</title>
     <script src="//cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
     <style type="text/css">
         body {
@@ -52,6 +52,21 @@
     	this.add.image(400, 300, 'sky');
     	this.add.image(400, 300, 'star');
 
+    	this.input.keyboard.on('keydown', function (event) {//recebe todos os inputs de teclado
+
+        	console.dir(event);
+
+   		});
+
+
+		this.input.keyboard.on('keydown-A', function (event) {//define comportamento de apertar "A"
+
+        	console.log('Apertasse A né?');
+
+    	});
+
+		XKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.x);//declarado um input X a ser computado pela função de update
+
     	stars = this.physics.add.group({//define comportamento da estrela
   			key: 'star',
     		repeat: 11,
@@ -76,7 +91,7 @@
 
     	player = this.physics.add.sprite(100, 450, 'dude');//insere personagem
 
-		player.setBounce(0.2);//adiciona uma colisão elástica quando o jogador toca o chão
+		player.setBounce(0);//adiciona uma colisão elástica quando o jogador toca o chão
 		player.setCollideWorldBounds(true);//impede jogador de sair da tela
 
 		this.anims.create({//definição da movimentação do personagem
@@ -126,6 +141,10 @@
 		if (cursors.up.isDown && player.body.touching.down){
     		player.setVelocityY(-330);
 		}
+
+		if (XKey.isDown){
+		 	console.log('X!');
+    	}
 
     }
 
