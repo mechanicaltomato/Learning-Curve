@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="20" height="10" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="26">
+ <tileset firstgid="1" source="Test1tiles.tsx"/>
+ <layer id="1" name="Background" width="20" height="10">
+  <data encoding="csv">
+688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,
+688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,
+688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,
+688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,
+688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,
+688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,
+688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,
+688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,
+688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,
+688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688,688
+</data>
+ </layer>
+ <layer id="2" name="Scenario" width="20" height="10">
+  <data encoding="csv">
+663,663,663,663,663,663,663,663,663,663,663,663,663,663,663,663,663,663,663,663,
+663,0,0,0,0,0,0,0,663,0,0,0,0,0,0,0,0,0,0,663,
+663,0,0,0,0,663,0,0,663,0,0,0,663,663,0,0,0,0,0,663,
+663,663,663,663,663,663,0,0,663,663,0,0,0,663,0,0,0,0,0,663,
+663,0,0,0,0,0,0,0,663,0,0,0,663,663,663,663,663,663,0,663,
+663,0,663,0,0,0,0,0,663,663,0,0,0,663,0,0,0,0,0,663,
+663,0,663,663,663,663,663,663,663,0,0,663,663,663,0,0,0,0,0,663,
+663,0,0,0,0,0,0,0,663,0,0,0,0,663,0,0,0,0,0,663,
+663,0,0,0,0,0,0,0,0,0,0,0,0,663,0,0,0,0,0,663,
+663,663,663,663,663,663,663,663,663,663,663,663,663,663,663,663,663,663,663,663
+</data>
+ </layer>
+ <objectgroup id="3" name="Collision(Scenario)">
+  <object id="1" x="0" y="0" width="640" height="32"/>
+  <object id="2" x="608" y="0" width="32" height="320"/>
+  <object id="3" x="0" y="288" width="640" height="32"/>
+  <object id="4" x="0" y="0" width="32" height="320"/>
+  <object id="5" x="32" y="96" width="160" height="32"/>
+  <object id="6" x="64" y="192" width="224" height="32"/>
+  <object id="7" x="352" y="192" width="96" height="32"/>
+  <object id="8" x="384" y="128" width="192" height="32"/>
+  <object id="9" x="384" y="64" width="64" height="32"/>
+  <object id="10" x="256" y="96" width="64" height="32"/>
+  <object id="11" x="256" y="160" width="64" height="32"/>
+  <object id="12" x="64" y="160" width="32" height="64"/>
+  <object id="13" x="160" y="64" width="32" height="64"/>
+  <object id="14" x="256" y="0" width="32" height="256"/>
+  <object id="15" x="416" y="64" width="32" height="256"/>
+  <object id="16" type="item" gid="394" x="77" y="265" width="32" height="32">
+   <properties>
+    <property name="sprite" value="bluecup"/>
+   </properties>
+  </object>
+  <object id="20" type="item" gid="390" x="104" y="184" width="32" height="32">
+   <properties>
+    <property name="sprite" value="redcup"/>
+   </properties>
+  </object>
+  <object id="21" type="playerStart" gid="148" x="39" y="82" width="32" height="32"/>
+  <object id="22" type="door" gid="49" x="416" y="64" width="32" height="32">
+   <properties>
+    <property name="sprite" value="browndoor"/>
+   </properties>
+  </object>
+  <object id="23" type="item" gid="394" x="338" y="148" width="32" height="32">
+   <properties>
+    <property name="sprite" value="bluecup"/>
+   </properties>
+  </object>
+  <object id="24" type="item" gid="394" x="484" y="119" width="32" height="32">
+   <properties>
+    <property name="sprite" value="bluecup"/>
+   </properties>
+  </object>
+  <object id="25" type="item" gid="390" x="362" y="268" width="32" height="32">
+   <properties>
+    <property name="sprite" value="redcup"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

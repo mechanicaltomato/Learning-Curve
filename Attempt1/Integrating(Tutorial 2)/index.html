@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Learn Game Development at ZENVA.com</title>
+
+		<script type="text/javascript" src="js/phaser.min.js"></script>
+		<script type="text/javascript" src="js/Boot.js"></script>
+		<script type="text/javascript" src="js/Preload.js"></script>
+		<script type="text/javascript" src="js/Game.js"></script>
+		<script src="js/main.js"></script>
+
+		<style>
+		  body {
+		    padding: 0px;
+		    margin: 0px;
+		  }
+		  </style>
+	</head>
+	var TopDownGame = TopDownGame || {};
+
+	TopDownGame.game = new Phaser.Game(640, 320, Phaser.AUTO, '');
+ 
+	TopDownGame.game.state.add('Boot', TopDownGame.Boot);
+	TopDownGame.game.state.add('Preload', TopDownGame.Preload);
+	TopDownGame.game.state.add('Game', TopDownGame.Game);
+ 
+	TopDownGame.game.state.start('Boot')
+	<body>  
+		<!-- include the main game file -->
+		<script src="js/main.js"></script>
+	</body>
+</html>
