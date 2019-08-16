@@ -52,7 +52,6 @@
  </layer>
  <objectgroup id="4" name="Actual Collision(Hitboxes)">
   <object id="5" x="64" y="576" width="128" height="64"/>
-  <object id="6" x="697" y="398"/>
  </objectgroup>
  <layer id="3" name="Top" width="20" height="20">
   <data encoding="csv">
